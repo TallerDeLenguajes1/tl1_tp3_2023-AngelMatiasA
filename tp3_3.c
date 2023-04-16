@@ -12,7 +12,7 @@ char **VectorChar;
 char aux[20];
 int largo = 0;
 
-VectorChar =(char*) malloc(sizeof(char*)*5);
+VectorChar =(char**) malloc(sizeof(char*)*5);
 
 //cargar nombres
 for (int i = 0; i < 5; i++)
@@ -35,6 +35,11 @@ for (int i = 0; i < 5; i++)
     puts(VectorChar[i]); 
     printf("\n");
 }
+for (int i = 0; i < 5; i++)
+{
+    free(VectorChar[i]);
+}
+free(VectorChar);
 
     return 0;
 }
