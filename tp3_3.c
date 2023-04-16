@@ -8,7 +8,7 @@ int main(){
 // las notas 1 y 2)
 
 char **VectorChar; 
-char *nombre; 
+// char *nombre; 
 char aux[20];
 int largo = 0;
 
@@ -17,7 +17,7 @@ VectorChar =(char*) malloc(sizeof(char*)*5);
 //cargar nombres
 for (int i = 0; i < 5; i++)
 {
-   printf("ingrese el numbre numero %d ", i+1);
+   printf("ingrese el nombre numero %d ", i+1);
    gets(aux); 
     fflush(stdin);
     VectorChar[i] = (char*) malloc(sizeof(char)* strlen(aux));
@@ -30,7 +30,7 @@ for (int i = 0; i < 5; i++)
 for (int i = 0; i < 5; i++)
 
 {
-       printf(" el numbre numero %d ingresado es ", i+1);
+       printf(" el nombre numero %d ingresado es ", i+1);
 
     puts(VectorChar[i]); 
     printf("\n");
