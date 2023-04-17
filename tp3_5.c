@@ -3,9 +3,7 @@
 #include <string.h>
 
 int main(){
-/*5) Modifique el ejercicio nro 3 para que, en lugar de ingresar un número fijo de nombres, el
-usuario pueda indicar previamente la cantidad de nombres que ingresará a continuación.
-*/
+
 
 char **VectorChar; 
 // char *nombre; 
@@ -47,3 +45,4 @@ for (int i = 0; i < cantidadNombres; i++)
 free(VectorChar);
     return 0;
 }
+
